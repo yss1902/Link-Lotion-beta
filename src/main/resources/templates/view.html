@@ -4,8 +4,7 @@
     <title th:text="${document.title} + ' - Link-Notion'">Link-Notion</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Toast UI Viewer CSS (Separate bundle usually) -->
-    <!-- If we use the main bundle, it includes editor styles. We might want to ensure we don't have toolbar styles or rely on JS factory correctly. -->
+    <!-- Toast UI Viewer CSS -->
     <link rel="stylesheet" href="https://uicdn.toast.com/editor/3.2.2/toastui-editor-viewer.min.css" />
     <style>
         body { height: 100vh; overflow: hidden; display: flex; }
@@ -139,35 +138,24 @@
         </div>
     </div>
 
-    <!-- Use toastui-editor-viewer.min.js NOT toastui-editor-all.min.js -->
-    <!-- The previous inclusion of toastui-editor-all.min.js is causing the Editor class to be loaded which might default to Editor behavior even with factory -->
-    <!-- The fix is to switch the JS inclusion to viewer only -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://uicdn.toast.com/editor/3.2.2/toastui-editor-viewer.min.js"></script>
     <script>
-        const content = document.getElementById('docContent').value;
-        // When using toastui-editor-viewer.min.js, 'toastui.Editor' refers to the Viewer class directly?
-        // Or we should use 'toastui.Editor' as the constructor.
-
-        // Let's try simple instantiation again with the viewer bundle.
-        // If I use the viewer bundle, `toastui.Editor` IS the Viewer class.
-
-        const viewer = new toastui.Editor({
-            el: document.querySelector('#viewer'),
-            initialValue: content
-        });
+        // Define utility functions globally first
+        function setParentId(id) {
+            document.getElementById('parentIdInput').value = id;
+        }
 
         function toggleSharePopup() {
             document.getElementById('sharePopup').classList.toggle('show');
         }
 
-        // Close popup when clicking outside
-        window.onclick = function(event) {
-            if (!event.target.matches('.btn-outline-primary') && !event.target.closest('.share-container')) {
-                var popup = document.getElementById('sharePopup');
-                if (popup.classList.contains('show')) {
-                    popup.classList.remove('show');
-                }
-            }
+        function copyToClipboard() {
+            const urlField = document.getElementById('shareUrl');
+            const fullUrl = window.location.origin + urlField.value;
+            navigator.clipboard.writeText(fullUrl).then(() => {
+                alert("Link copied!");
+            });
         }
 
         function updateShareStatus() {
@@ -189,25 +177,39 @@
             });
         }
 
-        // Handle Sub-page creation
-        var newDocModal = document.getElementById('newDocModal');
-        newDocModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
-            var parentId = button.getAttribute('data-parent-id');
-            var input = document.getElementById('parentIdInput');
-            input.value = parentId ? parentId : '';
+        // Initialize Modal Listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            var newDocModal = document.getElementById('newDocModal');
+            if(newDocModal) {
+                newDocModal.addEventListener('show.bs.modal', function (event) {
+                    var button = event.relatedTarget;
+                    var parentId = button.getAttribute('data-parent-id');
+                    var input = document.getElementById('parentIdInput');
+                    input.value = parentId ? parentId : '';
+                });
+            }
+
+            // Window click listener for popup
+            window.onclick = function(event) {
+                if (!event.target.matches('.btn-outline-primary') && !event.target.closest('.share-container')) {
+                    var popup = document.getElementById('sharePopup');
+                    if (popup && popup.classList.contains('show')) {
+                        popup.classList.remove('show');
+                    }
+                }
+            }
         });
 
-        function setParentId(id) {
-            document.getElementById('parentIdInput').value = id;
-        }
-
-        function copyToClipboard() {
-            const urlField = document.getElementById('shareUrl');
-            const fullUrl = window.location.origin + urlField.value;
-            navigator.clipboard.writeText(fullUrl).then(() => {
-                alert("Link copied!");
+        // Initialize Toast UI Viewer safely
+        try {
+            const content = document.getElementById('docContent').value;
+            // Using viewer bundle, toastui.Editor is the Viewer class
+            const viewer = new toastui.Editor({
+                el: document.querySelector('#viewer'),
+                initialValue: content
             });
+        } catch (e) {
+            console.error("Failed to initialize Toast UI Viewer:", e);
         }
     </script>
 </body>
