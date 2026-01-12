@@ -25,8 +25,10 @@ public class DocumentController {
     }
 
     @PostMapping("/docs/new")
-    public String createDocument(@AuthenticationPrincipal UserDetails userDetails, @RequestParam String title) {
-        Document doc = documentService.createDocument(userDetails.getUsername(), title);
+    public String createDocument(@AuthenticationPrincipal UserDetails userDetails,
+                                 @RequestParam String title,
+                                 @RequestParam(required = false) Long parentId) {
+        Document doc = documentService.createSubDocument(userDetails.getUsername(), title, parentId);
         return "redirect:/docs/" + doc.getId() + "/edit";
     }
 

@@ -4,8 +4,6 @@
     <title th:text="${document.title} + ' - Link-Notion'">Link-Notion</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Toast UI Viewer CSS -->
-    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.min.css" />
     <style>
         body { height: 100vh; overflow: hidden; display: flex; }
         .sidebar { width: 250px; background: #f8f9fa; border-right: 1px solid #ddd; display: flex; flex-direction: column; height: 100%; flex-shrink: 0; }
@@ -31,17 +29,13 @@
     <div class="sidebar">
         <div class="sidebar-header d-flex justify-content-between align-items-center">
             <a href="/" class="text-decoration-none text-dark">Link-Notion</a>
-            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#newDocModal">
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#newDocModal" onclick="setParentId(null)">
                 <i class="fas fa-plus"></i>
             </button>
         </div>
-        <ul class="doc-list">
-            <li th:each="doc : ${documents}">
-                <a th:href="@{/docs/{id}(id=${doc.id})}" class="doc-item" th:classappend="${doc.id == document.id} ? 'active'">
-                    <i class="fas fa-file-alt me-2"></i> <span th:text="${doc.title}">Doc Title</span>
-                </a>
-            </li>
-        </ul>
+        <div class="doc-list flex-grow-1 overflow-auto p-2">
+            <div th:replace="~{fragments/sidebar :: sidebar-doc(${documents})}"></div>
+        </div>
         <div class="user-profile d-flex justify-content-between align-items-center">
             <small th:text="${username}">User</small>
             <form th:action="@{/logout}" method="post" style="display:inline;">
@@ -88,7 +82,7 @@
             </div>
         </div>
         <div class="view-container">
-            <div id="viewer"></div>
+            <div id="viewer" class="doc-content"></div>
             <!-- Hidden input to hold content for the viewer -->
             <input type="hidden" id="docContent" th:value="${document.content}">
         </div>
@@ -104,6 +98,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
+                        <input type="hidden" name="parentId" id="parentIdInput">
                         <input type="text" name="title" class="form-control" placeholder="Document Title" required>
                     </div>
                     <div class="modal-footer">
@@ -136,15 +131,11 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Toast UI Viewer JS -->
-    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
     <script>
         const content = document.getElementById('docContent').value;
-        const viewer = new toastui.Editor.factory({
-            el: document.querySelector('#viewer'),
-            viewer: true,
-            initialValue: content
-        });
+        document.getElementById('viewer').innerHTML = DOMPurify.sanitize(marked.parse(content));
 
         function toggleSharePopup() {
             document.getElementById('sharePopup').classList.toggle('show');
@@ -177,6 +168,19 @@
             }).then(() => {
                 location.reload();
             });
+        }
+
+        // Handle Sub-page creation
+        var newDocModal = document.getElementById('newDocModal');
+        newDocModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            var parentId = button.getAttribute('data-parent-id');
+            var input = document.getElementById('parentIdInput');
+            input.value = parentId ? parentId : '';
+        });
+
+        function setParentId(id) {
+            document.getElementById('parentIdInput').value = id;
         }
 
         function copyToClipboard() {

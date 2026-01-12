@@ -25,16 +25,27 @@ public class DocumentService {
 
     public List<Document> getDocumentsByUser(String username) {
         User user = getUser(username);
-        return documentRepository.findAllByOwnerOrderByCreatedAtDesc(user);
+        // Only fetch root documents
+        return documentRepository.findAllByOwnerAndParentIsNullOrderByCreatedAtDesc(user);
     }
 
     public Document createDocument(String username, String title) {
+        return createSubDocument(username, title, null);
+    }
+
+    public Document createSubDocument(String username, String title, Long parentId) {
         User user = getUser(username);
         Document document = new Document();
         document.setTitle(title);
         document.setOwner(user);
         document.setContent(""); // Start empty
         document.setUuid(UUID.randomUUID().toString()); // Generate UUID
+
+        if (parentId != null) {
+            Document parent = getDocument(parentId, username);
+            document.setParent(parent);
+        }
+
         return documentRepository.save(document);
     }
 

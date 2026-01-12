@@ -1,7 +1,8 @@
+Starting a Gradle Daemon, 1 stopped Daemon could not be reused, use --status for details
 > Task :compileJava UP-TO-DATE
-> Task :processResources
-> Task :classes
-> Task :resolveMainClassName
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
 
 > Task :bootRun
 
@@ -14,26 +15,26 @@
 
  :: Spring Boot ::                (v3.4.1)
 
-2026-01-12T01:42:38.957Z  INFO 16992 --- [link-notion] [  restartedMain] com.linknotion.LinkNotionApplication     : Starting LinkNotionApplication using Java 21.0.8 with PID 16992 (/app/build/classes/java/main started by jules in /app)
-2026-01-12T01:42:38.961Z  INFO 16992 --- [link-notion] [  restartedMain] com.linknotion.LinkNotionApplication     : No active profile set, falling back to 1 default profile: "default"
-2026-01-12T01:42:39.010Z  INFO 16992 --- [link-notion] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-12T01:42:39.010Z  INFO 16992 --- [link-notion] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-12T01:42:39.711Z  INFO 16992 --- [link-notion] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-12T01:42:39.775Z  INFO 16992 --- [link-notion] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
-2026-01-12T01:42:40.426Z  INFO 16992 --- [link-notion] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-01-12T01:42:40.443Z  INFO 16992 --- [link-notion] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-12T01:42:40.443Z  INFO 16992 --- [link-notion] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-01-12T01:42:40.486Z  INFO 16992 --- [link-notion] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-01-12T01:42:40.487Z  INFO 16992 --- [link-notion] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1475 ms
-2026-01-12T01:42:40.689Z  INFO 16992 --- [link-notion] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-12T01:42:40.737Z  INFO 16992 --- [link-notion] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2026-01-12T01:42:40.768Z  INFO 16992 --- [link-notion] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-01-12T01:42:41.042Z  INFO 16992 --- [link-notion] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-12T01:42:41.085Z  INFO 16992 --- [link-notion] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-01-12T01:42:41.280Z  INFO 16992 --- [link-notion] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:linknotiondb user=SA
-2026-01-12T01:42:41.283Z  INFO 16992 --- [link-notion] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-01-12T01:42:41.310Z  WARN 16992 --- [link-notion] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-01-12T01:42:41.333Z  INFO 16992 --- [link-notion] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-01-12T02:28:42.322Z  INFO 32305 --- [link-notion] [  restartedMain] com.linknotion.LinkNotionApplication     : Starting LinkNotionApplication using Java 21.0.8 with PID 32305 (/app/build/classes/java/main started by jules in /app)
+2026-01-12T02:28:42.329Z  INFO 32305 --- [link-notion] [  restartedMain] com.linknotion.LinkNotionApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T02:28:42.462Z  INFO 32305 --- [link-notion] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-12T02:28:42.462Z  INFO 32305 --- [link-notion] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-12T02:28:43.707Z  INFO 32305 --- [link-notion] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12T02:28:43.872Z  INFO 32305 --- [link-notion] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 3 JPA repository interfaces.
+2026-01-12T02:28:45.044Z  INFO 32305 --- [link-notion] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-12T02:28:45.084Z  INFO 32305 --- [link-notion] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-12T02:28:45.084Z  INFO 32305 --- [link-notion] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-12T02:28:45.173Z  INFO 32305 --- [link-notion] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-12T02:28:45.176Z  INFO 32305 --- [link-notion] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2711 ms
+2026-01-12T02:28:45.580Z  INFO 32305 --- [link-notion] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-12T02:28:45.676Z  INFO 32305 --- [link-notion] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-12T02:28:45.735Z  INFO 32305 --- [link-notion] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-12T02:28:46.250Z  INFO 32305 --- [link-notion] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-12T02:28:46.327Z  INFO 32305 --- [link-notion] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-12T02:28:46.586Z  INFO 32305 --- [link-notion] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:linknotiondb user=SA
+2026-01-12T02:28:46.589Z  INFO 32305 --- [link-notion] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-12T02:28:46.617Z  WARN 32305 --- [link-notion] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-12T02:28:46.642Z  INFO 32305 --- [link-notion] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -41,9 +42,9 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-01-12T01:42:42.189Z  INFO 16992 --- [link-notion] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-12T02:28:47.643Z  INFO 32305 --- [link-notion] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: create table comments (id bigint generated by default as identity, content TEXT not null, created_at timestamp(6), user_id bigint, document_id bigint, primary key (id))
-Hibernate: create table documents (id bigint generated by default as identity, content TEXT, created_at timestamp(6), is_shared boolean not null, title varchar(255) not null, updated_at timestamp(6), uuid varchar(255), user_id bigint, primary key (id))
+Hibernate: create table documents (id bigint generated by default as identity, content TEXT, created_at timestamp(6), is_shared boolean not null, title varchar(255) not null, updated_at timestamp(6), uuid varchar(255), user_id bigint, parent_id bigint, primary key (id))
 Hibernate: create table users (id bigint generated by default as identity, password varchar(255) not null, username varchar(255) not null, primary key (id))
 Hibernate: alter table if exists documents drop constraint if exists UKfjnuaofw1lpmiuei4sqysjt1q
 Hibernate: alter table if exists documents add constraint UKfjnuaofw1lpmiuei4sqysjt1q unique (uuid)
@@ -52,55 +53,256 @@ Hibernate: alter table if exists users add constraint UKr43af9ap4edm43mmtq01oddj
 Hibernate: alter table if exists comments add constraint FK8omq0tc18jd43bu5tjh6jvraq foreign key (user_id) references users
 Hibernate: alter table if exists comments add constraint FKccw7klbfv0lkycbtfxa53sqja foreign key (document_id) references documents
 Hibernate: alter table if exists documents add constraint FKkxttj4tp5le2uth212lu49vny foreign key (user_id) references users
-2026-01-12T01:42:42.270Z  INFO 16992 --- [link-notion] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-12T01:42:42.689Z  WARN 16992 --- [link-notion] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-12T01:42:42.709Z  INFO 16992 --- [link-notion] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2026-01-12T01:42:42.839Z  INFO 16992 --- [link-notion] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2026-01-12T01:42:43.226Z  INFO 16992 --- [link-notion] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:linknotiondb'
-2026-01-12T01:42:43.289Z  INFO 16992 --- [link-notion] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-01-12T01:42:43.319Z  INFO 16992 --- [link-notion] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-01-12T01:42:43.329Z  INFO 16992 --- [link-notion] [  restartedMain] com.linknotion.LinkNotionApplication     : Started LinkNotionApplication in 5.054 seconds (process running for 6.533)
-2026-01-12T01:43:33.426Z  INFO 16992 --- [link-notion] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-12T01:43:33.426Z  INFO 16992 --- [link-notion] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-01-12T01:43:33.428Z  INFO 16992 --- [link-notion] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: alter table if exists documents add constraint FKh6uwxbgs1faounqmgpphvubdr foreign key (parent_id) references documents
+2026-01-12T02:28:47.734Z  INFO 32305 --- [link-notion] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-12T02:28:48.339Z  WARN 32305 --- [link-notion] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12T02:28:48.364Z  INFO 32305 --- [link-notion] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-01-12T02:28:48.450Z  INFO 32305 --- [link-notion] [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-01-12T02:28:48.966Z  INFO 32305 --- [link-notion] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:linknotiondb'
+2026-01-12T02:28:49.069Z  INFO 32305 --- [link-notion] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-01-12T02:28:49.124Z  INFO 32305 --- [link-notion] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-12T02:28:49.149Z  INFO 32305 --- [link-notion] [  restartedMain] com.linknotion.LinkNotionApplication     : Started LinkNotionApplication in 7.542 seconds (process running for 8.398)
+2026-01-12T02:29:18.175Z  INFO 32305 --- [link-notion] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-12T02:29:18.175Z  INFO 32305 --- [link-notion] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-12T02:29:18.177Z  INFO 32305 --- [link-notion] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
 Hibernate: insert into users (password,username,id) values (?,?,default)
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
-Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? order by d1_0.created_at desc
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
-Hibernate: insert into documents (content,created_at,is_shared,user_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,default)
-Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
-Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? order by d1_0.created_at desc
-Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
-Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,title=?,updated_at=?,uuid=? where id=?
-Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
 Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
-Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? order by d1_0.created_at desc
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             2026-01-12T01:42:34.494Z  INFO 15236 --- [link-notion] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-12T01:42:34.502Z  INFO 15236 --- [link-notion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-01-12T01:42:34.507Z  INFO 15236 --- [link-notion] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-12T01:42:34.514Z  WARN 15236 --- [link-notion] [ionShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2026-01-12T01:42:34.514Z  INFO 15236 --- [link-notion] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-01-12T01:42:34.516Z  INFO 15236 --- [link-notion] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-
-> Task :bootRun FAILED
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':bootRun'.
-> Process 'command '/usr/lib/jvm/java-21-openjdk-amd64/bin/java'' finished with non-zero exit value 143
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to generate a Build Scan (powered by Develocity).
-> Get more help at https://help.gradle.org.
-
-BUILD FAILED in 3m 2s
-4 actionable tasks: 4 executed
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into users (password,username,id) values (?,?,default)
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into users (password,username,id) values (?,?,default)
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into users (password,username,id) values (?,?,default)
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.uuid=?
+Hibernate: select c1_0.id,c1_0.user_id,c1_0.content,c1_0.created_at,c1_0.document_id from comments c1_0 where c1_0.document_id=? order by c1_0.created_at desc
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.uuid=?
+Hibernate: select c1_0.id,c1_0.user_id,c1_0.content,c1_0.created_at,c1_0.document_id from comments c1_0 where c1_0.document_id=? order by c1_0.created_at desc
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into users (password,username,id) values (?,?,default)
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.uuid=?
+Hibernate: select c1_0.id,c1_0.user_id,c1_0.content,c1_0.created_at,c1_0.document_id from comments c1_0 where c1_0.document_id=? order by c1_0.created_at desc
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into users (password,username,id) values (?,?,default)
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: insert into documents (content,created_at,is_shared,user_id,parent_id,title,updated_at,uuid,id) values (?,?,?,?,?,?,?,?,default)
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: update documents set content=?,created_at=?,is_shared=?,user_id=?,parent_id=?,title=?,updated_at=?,uuid=? where id=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select d1_0.id,d1_0.content,d1_0.created_at,d1_0.is_shared,d1_0.user_id,d1_0.parent_id,d1_0.title,d1_0.updated_at,d1_0.uuid from documents d1_0 where d1_0.user_id=? and d1_0.parent_id is null order by d1_0.created_at desc
+Hibernate: select c1_0.parent_id,c1_0.id,c1_0.content,c1_0.created_at,c1_0.is_shared,c1_0.user_id,c1_0.title,c1_0.updated_at,c1_0.uuid from documents c1_0 where c1_0.parent_id=?

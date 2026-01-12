@@ -8,5 +8,6 @@ import java.util.Optional;
 
 public interface DocumentRepository extends JpaRepository<Document, Long> {
     List<Document> findAllByOwnerOrderByCreatedAtDesc(User owner);
+    List<Document> findAllByOwnerAndParentIsNullOrderByCreatedAtDesc(User owner);
     Optional<Document> findByUuid(String uuid);
 }

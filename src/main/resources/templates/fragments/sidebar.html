@@ -1,0 +1,25 @@
+<div th:fragment="sidebar-doc(docs)">
+    <ul class="doc-list ps-3" style="list-style: none; padding-left: 0;">
+        <li th:each="doc : ${docs}" class="mb-1">
+            <div class="d-flex align-items-center justify-content-between group-item"
+                 th:classappend="${document != null && doc.id == document.id} ? 'bg-light fw-bold' : ''"
+                 style="padding: 5px; border-radius: 4px;">
+                <a th:href="@{/docs/{id}(id=${doc.id})}" class="text-decoration-none text-dark d-flex align-items-center flex-grow-1 text-truncate">
+                    <i class="fas fa-file-alt me-2 text-secondary"></i>
+                    <span th:text="${doc.title}">Title</span>
+                </a>
+                <button class="btn btn-sm btn-link text-secondary p-0 ms-2 add-sub-btn"
+                        th:data-parent-id="${doc.id}"
+                        data-bs-toggle="modal"
+                        data-bs-target="#newDocModal"
+                        title="Add sub-page">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <!-- Recursion -->
+            <div th:if="${!doc.children.isEmpty()}" class="ms-3 border-start ps-2 border-light">
+                <div th:replace="~{fragments/sidebar :: sidebar-doc(${doc.children})}"></div>
+            </div>
+        </li>
+    </ul>
+</div>
