@@ -27,11 +27,20 @@ public class DocumentController {
     @PostMapping("/docs/new")
     public String createDocument(@AuthenticationPrincipal UserDetails userDetails, @RequestParam String title) {
         Document doc = documentService.createDocument(userDetails.getUsername(), title);
-        return "redirect:/docs/" + doc.getId();
+        return "redirect:/docs/" + doc.getId() + "/edit";
     }
 
     @GetMapping("/docs/{id}")
     public String viewDocument(@PathVariable Long id, @AuthenticationPrincipal UserDetails userDetails, Model model) {
+        Document document = documentService.getDocument(id, userDetails.getUsername());
+        model.addAttribute("document", document);
+        model.addAttribute("documents", documentService.getDocumentsByUser(userDetails.getUsername())); // Sidebar list
+        model.addAttribute("username", userDetails.getUsername());
+        return "view";
+    }
+
+    @GetMapping("/docs/{id}/edit")
+    public String editDocument(@PathVariable Long id, @AuthenticationPrincipal UserDetails userDetails, Model model) {
         Document document = documentService.getDocument(id, userDetails.getUsername());
         model.addAttribute("document", document);
         model.addAttribute("documents", documentService.getDocumentsByUser(userDetails.getUsername())); // Sidebar list
