@@ -4,8 +4,8 @@
     <title th:text="${document.title} + ' - Link-Notion'">Link-Notion</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- SimpleMDE CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplemde@1.11.2/dist/simplemde.min.css">
+    <!-- Toast UI Editor CSS -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/3.2.2/toastui-editor.min.css" />
     <style>
         body { height: 100vh; overflow: hidden; display: flex; }
         .sidebar { width: 250px; background: #f8f9fa; border-right: 1px solid #ddd; display: flex; flex-direction: column; height: 100%; flex-shrink: 0; }
@@ -17,10 +17,13 @@
 
         .main-area { flex-grow: 1; display: flex; flex-direction: column; height: 100%; overflow: hidden; }
         .editor-header { padding: 10px 20px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; background: white; }
-        .editor-container { flex-grow: 1; padding: 20px; overflow-y: auto; }
+        .editor-container { flex-grow: 1; padding: 20px; overflow-y: hidden; display: flex; flex-direction: column; }
 
         .user-profile { padding: 15px; border-top: 1px solid #ddd; }
-        .CodeMirror { height: calc(100vh - 150px); }
+
+        /* Toast UI Editor Customization */
+        #editor { height: 100%; }
+        .toastui-editor-defaultUI { border: none !important; }
     </style>
 </head>
 <body>
@@ -51,13 +54,15 @@
                 <input type="text" name="title" class="form-control me-2" th:value="${document.title}" style="width: auto; font-weight: bold; border: none; font-size: 1.2rem;" required>
                 <div>
                      <a th:href="@{/docs/{id}(id=${document.id})}" class="btn btn-secondary btn-sm me-2">Cancel</a>
-                     <button type="submit" class="btn btn-success btn-sm">
+                     <button type="button" class="btn btn-success btn-sm" onclick="submitForm()">
                         <i class="fas fa-save"></i> Save
                      </button>
                 </div>
             </div>
             <div class="editor-container">
-                <textarea id="markdown-editor" name="content"></textarea>
+                <div id="editor"></div>
+                <!-- Hidden input to store Markdown content on submit -->
+                <input type="hidden" name="content" id="hiddenContent">
             </div>
         </form>
     </div>
@@ -87,17 +92,28 @@
     <div id="initialContentStore" style="display:none;" th:text="${document.content}"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simplemde@1.11.2/dist/simplemde.min.js"></script>
+    <script src="https://uicdn.toast.com/editor/3.2.2/toastui-editor-all.min.js"></script>
     <script>
         const initialContent = document.getElementById('initialContentStore').textContent;
-        var simplemde = new SimpleMDE({
-            element: document.getElementById("markdown-editor"),
+        const Editor = toastui.Editor;
+
+        const editor = new Editor({
+            el: document.querySelector('#editor'),
+            height: '100%',
+            initialEditType: 'wysiwyg',
+            previewStyle: 'vertical',
             initialValue: initialContent,
-            spellChecker: false
+            hideModeSwitch: false
         });
 
         // Expose to window for testing
-        window.editor = simplemde;
+        window.editor = editor;
+
+        function submitForm() {
+            const content = editor.getMarkdown();
+            document.getElementById('hiddenContent').value = content;
+            document.getElementById('docForm').submit();
+        }
 
         // Handle Sub-page creation
         var newDocModal = document.getElementById('newDocModal');
