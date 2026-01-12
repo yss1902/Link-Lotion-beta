@@ -1,10 +1,10 @@
-package com.Link_Lotion_beta;
+package com.linknotion;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LinkLotionBetaApplicationTests {
+class LinkNotionApplicationTests {
 
 	@Test
 	void contextLoads() {
